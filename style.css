@@ -1,0 +1,52 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f172a; /* Dark tech theme */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    width: 350px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: white;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #3b82f6; /* Action Blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hidden { display: none; }
+
+#qrcode-container {
+    background: white;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 8px;
+    margin: 20px 0;
+}

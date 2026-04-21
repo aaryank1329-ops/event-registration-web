@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration | Secure Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div id="reg-form">
+            <h2>Event Registration</h2>
+            <p>Enter details to generate your secure pass.</p>
+            <input type="text" id="name" placeholder="Enter Full Name">
+            <input type="email" id="email" placeholder="Enter Email Address">
+            <input type="password" id="pass" placeholder="Create Access PIN">
+            <button onclick="handleAuth()">Register & Generate QR</button>
+        </div>
+
+        <div id="ticket" class="hidden">
+            <div class="success-icon">✔</div>
+            <h3>Registration Successful!</h3>
+            <p id="user-display"></p>
+            <div id="qrcode-container"></div>
+            <p class="note">Show this QR at the venue entrance.</p>
+            <button class="secondary" onclick="location.reload()">Register Another</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
